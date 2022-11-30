@@ -31,12 +31,12 @@ public class ID {
         private String typeID;
         private String valueID;
 
-        public void setTypeID(String typeID) {
+        public Builder setTypeID(String typeID) {
             this.typeID = typeID;
             return this; //return the Builder object
         }
 
-        public void setValueID(String valueID) {
+        public Builder setValueID(String valueID) {
             this.valueID = valueID;
             return this; //return the Builder object
         }
