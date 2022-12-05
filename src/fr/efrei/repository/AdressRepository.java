@@ -25,6 +25,4 @@ public class AdressRepository implements IAdressRepository{
             return null;
         }
     }
-
-
 }
