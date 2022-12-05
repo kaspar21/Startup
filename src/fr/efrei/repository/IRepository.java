@@ -7,5 +7,4 @@ public interface IRepository<T, ID> {
     T read(ID id);
     T update(T t);
     boolean delete(ID d); //delete by an ID, since it is a unique attribute
-
 }
