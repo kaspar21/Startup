@@ -1,3 +1,5 @@
+package fr.efrei.domain;
+
 public class job {
     private int positionCode;
     private String title;
