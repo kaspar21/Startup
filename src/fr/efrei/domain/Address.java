@@ -1,6 +1,7 @@
 package fr.efrei.domain;
 //Done
 
+
 public class Address {
     private String streetAddress;
     private String postalAddress;
