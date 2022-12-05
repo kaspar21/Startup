@@ -1,5 +1,4 @@
 package fr.efrei.factory;
-
 import fr.efrei.domain.Race;
 import fr.efrei.util.Helper;
 

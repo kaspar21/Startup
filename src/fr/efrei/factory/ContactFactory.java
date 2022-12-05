@@ -1,7 +1,6 @@
 package fr.efrei.factory;
 import fr.efrei.domain.Contact;
 import fr.efrei.util.Helper;
-
 //Done
 
 

@@ -1,7 +1,7 @@
 package fr.efrei.factory;
-import fr.efrei.domain.EmployeeName;
 import fr.efrei.domain.ID;
 import fr.efrei.util.Helper;
+//Done
 
 public class IDFactory {
     public static ID createID (String typeID, String valueID){

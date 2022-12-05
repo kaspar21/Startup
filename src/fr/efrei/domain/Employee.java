@@ -1,6 +1,4 @@
 package fr.efrei.domain;
-
-
 //Done
 
 public class Employee {
