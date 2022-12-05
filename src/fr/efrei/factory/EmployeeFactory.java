@@ -14,4 +14,25 @@ public class EmployeeFactory {
                 .build();
         return employee;
     }
+    
+    public static Employee createEmployee(String employeeGender, String employeeRace){
+        if ( Helper.isNullOrEmpty(employeeGender) ||Helper.isNullOrEmpty(employeeRace)){
+            return null;
+        }
+        Employee employee = new Employee.Builder().setEmployeeGender(employeeGender)
+                .setEmployeeRace(employeeRace)
+                .build();
+        return employee;
+    }
+    
+    
+    public static Employee createEmployee(int employeeID){
+        if (Helper.isNullOrEmpty(employeeID)){
+            return null;
+        }
+        Employee employee = new Employee.Builder().setEmployeeID(employeeID)
+                .build();
+        return employee;
+    }
+    
 }
