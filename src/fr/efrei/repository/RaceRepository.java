@@ -1,7 +1,5 @@
 package fr.efrei.repository;
-
 import fr.efrei.domain.Race;
-
 import java.util.ArrayList;
 import java.util.List;
 
