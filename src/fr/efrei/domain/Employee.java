@@ -39,9 +39,9 @@ public class Employee {
 
     //builder class = static inner class, copy the same attributes at the top
     public static class Builder {
-        private int employeeID;
-        private String employeeGender;
-        private String employeeRace;
+        public int employeeID;
+        public String employeeGender;
+        public String employeeRace;
 
         public Builder setEmployeeID(int employeeID) {
             this.employeeID = employeeID;
