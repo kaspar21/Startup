@@ -13,6 +13,4 @@ public class RaceFactory {
                 .build();
         return race;
     }
-
-
 }
