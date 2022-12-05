@@ -1,6 +1,4 @@
-package fr.efrei.util;
-
-import fr.efrei.domain.Contact;
+package fr.efrei.domain;
 
 public class EmployeeName {
     private String firstname;
