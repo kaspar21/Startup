@@ -18,7 +18,6 @@ public class JobRepository implements IJobRepository {
         return repository;
     }
 
-
     @Override
     public Job create(Job job) {
         boolean success = jobDB.add(job); //indeed, add method returns a boolean
@@ -30,7 +29,10 @@ public class JobRepository implements IJobRepository {
         }
     }
 
-
+    @Override
+    public Job read(String s) {
+        return null;
+    }
 
     public Job read(int s) {
         for (Job i : jobDB){
@@ -65,5 +67,5 @@ public class JobRepository implements IJobRepository {
     @Override
     public List<Job> getAll() {
         return jobDB;
-    }}
-
+    }
+}
