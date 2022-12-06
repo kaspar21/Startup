@@ -31,10 +31,10 @@ public class EmployeeRepository implements IEmployeeRepository {
     }
 
 
-
-    public Employee read(String s) {
+    @Override
+    public Employee read(Integer i) {
         for (Employee e : employeeDB){
-            if (e.getEmployeeID().equals(s)){
+            if (e.getEmployeeID() == i){
                 return e;
             }
         }
@@ -52,13 +52,13 @@ public class EmployeeRepository implements IEmployeeRepository {
         return null;
     }
 
-
-    public boolean delete(String s) {
-        Employee employeeToDelete = read(s);
-        if (employeeToDelete == null) {
+    @Override
+    public boolean delete(Integer i) {
+        Employee raceToDelete = read(i);
+        if (raceToDelete == null) {
             return false;
         }
-        employeeDB.remove(employeeToDelete);
+        employeeDB.remove(raceToDelete);
         return true;
     }
 
