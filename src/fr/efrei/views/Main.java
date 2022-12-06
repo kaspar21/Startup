@@ -28,12 +28,37 @@ public class Main {
                     String middleName = in.nextLine();
                     System.out.println("Enter your surname : ");
                     String surname = in.nextLine();
-                    System.out.println("Enter your firstname : ");
-                    String firstname = in.nextLine();
-                    System.out.println("Enter your middle name :");
-                    String middleName = in.nextLine();
-                    System.out.println("Enter your surname : ");
-                    String surname = in.nextLine();
+                    System.out.println("Enter your gender description : ");
+                    String genderDescription = in.nextLine();
+                    System.out.println("Enter your race description:");
+                    String raceDescription = in.nextLine();
+                    System.out.println("Enter your phone number : ");
+                    int cellPhoneNumber = in.nextInt();
+                    System.out.println("Enter your email : ");
+                    String email = in.nextLine();
+                    System.out.println("Enter your home number:");
+                    int homeNumber = in.nextInt();
+                    System.out.println("Enter your street adress : ");
+                    String streetAddress = in.nextLine();
+                    System.out.println("Enter your postal adress : ");
+                    String  postalAdress = in.nextLine();
+                    System.out.println("Enter your city : ");
+                    String city = in.nextLine();
+                    System.out.println("Enter your country : ");
+                    String country = in.nextLine();
+                    System.out.println("Enter your street number : ");
+                    int streetNumber = in.nextInt();
+                    System.out.println("Enter your postal code : ");
+                    double postalCode = Double.parseDouble(in.nextLine());
+                    System.out.println("Enter your type of ID : ");
+                    String typeID = in.nextLine();
+                    System.out.println("Enter your ID number : ");
+                    String valueID = in.nextLine();
+                    System.out.println("Enter your position : ");
+
+
+
+
                     break;
                 case 1:
                     break;
