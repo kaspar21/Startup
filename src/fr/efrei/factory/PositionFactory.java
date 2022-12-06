@@ -5,7 +5,7 @@ import fr.efrei.util.Helper;
 
 public class PositionFactory {
     public static Position createPosition (String positionCode){
-        if ( Helper.isNullOrEmpty(valuePosition)){
+        if ( Helper.isNullOrEmpty(positionCode)){
             return null;
         }
         Position position = new Position.Builder().setPositionCode(positionCode)
