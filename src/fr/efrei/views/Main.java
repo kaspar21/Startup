@@ -1,5 +1,5 @@
 package fr.efrei.views;
-import fr.efrei.factory.RaceFactory;
+import fr.efrei.factory.*;
 import fr.efrei.domain.*;
 import fr.efrei.repository.*;
 import fr.efrei.util.Helper;
@@ -8,18 +8,32 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //Employee employee = new Employee.EmployeeBuilder("Vikram", "ABC").setHasBike(false).setHasBike(true).build();
-        System.out.println("Enter a number to select a command : /n");
-        System.out.println("0. Create an employee /n");
-        System.out.println("1. Create and add an employee to the list /n");
-        System.out.println("2. Modify an employee /n");
-        System.out.println("3. Delete an employee /n");
-        System.out.println("4. Look for an employee /n");
-        System.out.println("5. Exit the program /n");
-        Scanner in = new Scanner(System.in);
-        int number=in.nextInt();
-        while (number!=5){
+
+        boolean choice=true;
+        while (choice!=false){
+            System.out.println("Enter a number to select a command :");
+            System.out.println("0. Create an employee");
+            System.out.println("1. Create and add an employee to the list");
+            System.out.println("2. Modify an employee");
+            System.out.println("3. Delete an employee");
+            System.out.println("4. Look for an employee");
+            System.out.println("5. Exit the program");
+            Scanner in = new Scanner(System.in);
+            int number=in.nextInt();
             switch(number) {
                 case 0:
+                    System.out.println("Enter your firstname : ");
+                    String firstname = in.nextLine();
+                    System.out.println("Enter your middle name :");
+                    String middleName = in.nextLine();
+                    System.out.println("Enter your surname : ");
+                    String surname = in.nextLine();
+                    System.out.println("Enter your firstname : ");
+                    String firstname = in.nextLine();
+                    System.out.println("Enter your middle name :");
+                    String middleName = in.nextLine();
+                    System.out.println("Enter your surname : ");
+                    String surname = in.nextLine();
                     break;
                 case 1:
                     break;
@@ -30,24 +44,14 @@ public class Main {
                 case 4:
                     break;
                 case 5:
+                    choice=false;
                     break;
                 default:
-                    System.out.println("Enter a number to select a command : /n");
-                    System.out.println("0. Create an employee /n");
-                    System.out.println("1. Create and add an employee to the list /n");
-                    System.out.println("2. Modify an employee /n");
-                    System.out.println("3. Delete an employee /n");
-                    System.out.println("4. Look for an employee /n");
-                    System.out.println("5. Exit the program /n");
+                    System.out.println("Enter a number between 0 and 5 !\n");
+                    break;
             }
 
-            //System.out.println("Enter your firstname :  /n");
-            //String firstname = in.nextLine();
-            //System.out.println("Enter your middle name : /n");
-            //String middleName = in.nextLine();
-            //System.out.println("Enter your surname :  /n");
-            //String surname = in.nextLine();
-            //System.out.println("Name is: " + name);
+
         }
     }
 

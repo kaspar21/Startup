@@ -34,7 +34,7 @@ public class RaceRepository implements IRaceRepository {
     @Override
     public Race read(String s) {
         for (Race r : raceDB){
-            if (r.getId().equals(s)){
+            if (r.getDescription().equals(s)){
                 return r;
             }
 
@@ -44,7 +44,7 @@ public class RaceRepository implements IRaceRepository {
 
     @Override
     public Race update(Race race) {
-        Race oldRace = read(race.getId());
+        Race oldRace = read(race.getDescription());
         if (race != null){
             raceDB.remove(oldRace); //take the object away from the data structure
             raceDB.add(race);
