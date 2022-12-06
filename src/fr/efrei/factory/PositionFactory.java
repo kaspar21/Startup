@@ -8,7 +8,7 @@ public class PositionFactory {
         if ( Helper.isNullOrEmpty(valuePosition)){
             return null;
         }
-        Position position = new Position.Builder().set PositionCode(positionCode)
+        Position position = new Position.Builder().setPositionCode(positionCode)
                 .build();
         return position;
     }
