@@ -37,7 +37,7 @@ public class Gender {
         private String genderDescription;
 
         //setters, not getters
-        public Builder setId(String genderID) {
+        public Builder setGenderID(String genderID) {
             this.genderID = genderID;
             return this; //return the Builder object
         }
