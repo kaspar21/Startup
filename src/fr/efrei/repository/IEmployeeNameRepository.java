@@ -1,8 +1,8 @@
 package fr.efrei.repository;
-import fr.efrei.domain.EmployeeName;
+import fr.efrei.domain.Name;
 import java.util.List;
 
-public interface IEmployeeNameRepository extends IRepository <EmployeeName, String>{
+public interface IEmployeeNameRepository extends IRepository <Name, String>{
     //create, read, update, delete: override these 4 methods
-    public List<EmployeeName> getAll();
+    public List<Name> getAll();
 }

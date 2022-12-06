@@ -1,16 +1,16 @@
 package fr.efrei.repository;
 
-import fr.efrei.domain.EmployeeName;
+import fr.efrei.domain.Name;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeNameRepository implements IEmployeeNameRepository {
     private static EmployeeNameRepository repository = null;
-    private List<EmployeeName> employeeNameDB = null;
+    private List<Name> employeeNameDB = null;
 
     private EmployeeNameRepository() {
-        employeeNameDB = new ArrayList<EmployeeName>();
+        employeeNameDB = new ArrayList<Name>();
     }
 
     public static EmployeeNameRepository getRepository() {
@@ -22,7 +22,7 @@ public class EmployeeNameRepository implements IEmployeeNameRepository {
 
 
     @Override
-    public EmployeeName create(EmployeeName employeeName) {
+    public Name create(Name employeeName) {
         boolean success = employeeNameDB.add(employeeName); //indeed, add method returns a boolean
         if (success){
             return employeeName;
@@ -34,8 +34,8 @@ public class EmployeeNameRepository implements IEmployeeNameRepository {
 
 
     @Override
-    public EmployeeName read(String s) {
-        for (EmployeeName e : employeeNameDB){
+    public Name read(String s) {
+        for (Name e : employeeNameDB){
             if (e.getSurname().equals(s)){
                 return e;
             }
@@ -45,8 +45,8 @@ public class EmployeeNameRepository implements IEmployeeNameRepository {
     }
 
     @Override
-    public EmployeeName update(EmployeeName employeeName) {
-        EmployeeName oldEmployeeName = read(employeeName.getSurname());
+    public Name update(Name employeeName) {
+        Name oldEmployeeName = read(employeeName.getSurname());
         if (employeeName != null){
             employeeNameDB.remove(oldEmployeeName); //take the object away from the data structure
             employeeNameDB.add(employeeName);
@@ -57,7 +57,7 @@ public class EmployeeNameRepository implements IEmployeeNameRepository {
 
     @Override
     public boolean delete(String s) {
-        EmployeeName employeeNameToDelete = read(s);
+        Name employeeNameToDelete = read(s);
         if (employeeNameToDelete == null) {
             return false;
         }
@@ -66,7 +66,7 @@ public class EmployeeNameRepository implements IEmployeeNameRepository {
     }
 
     @Override
-    public List<EmployeeName> getAll() {
+    public List<Name> getAll() {
         return employeeNameDB;
     }
 

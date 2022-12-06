@@ -48,12 +48,12 @@ public class Gender {
         }
 
         public Builder copy(Gender gender){
-            this.genderID = race.genderID;
-            this.genderDescription = race.genderDescription;
+            this.genderID = gender.genderID;
+            this.genderDescription = gender.genderDescription;
             return this; //return the Builder object
         }
 
-        //build a race object -- like copy constructor in C++
+        //build a gender object -- like copy constructor in C++
         public Gender build() {
             return new Gender(this);
         }
