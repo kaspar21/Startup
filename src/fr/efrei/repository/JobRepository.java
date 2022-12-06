@@ -37,7 +37,6 @@ public class JobRepository implements IJobRepository {
             if (i.getpositionCode() == s){
                 return i;
             }
-
         }
         return null; //return null if we don't find the object in the list
     }
