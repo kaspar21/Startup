@@ -1,8 +1,6 @@
-
-
 package fr.efrei.factory;
-        import fr.efrei.domain.Gender;
-        import fr.efrei.util.Helper;
+import fr.efrei.domain.Gender;
+import fr.efrei.util.Helper;
 //Done
 
 public class GenderFactory {
