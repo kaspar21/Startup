@@ -30,7 +30,7 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Race{" +
+        return "Contact{" +
                 "cellPhoneNumber='" + cellPhoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 ", homeNumber='" + homeNumber + '\'' +

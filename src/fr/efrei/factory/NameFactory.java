@@ -3,7 +3,7 @@ import fr.efrei.domain.Name;
 import fr.efrei.util.Helper;
 //Done
 
-public class EmployeeNameFactory {
+public class NameFactory {
     public static Name createEmployeeName (String firstname, String surname){
         if (Helper.isNullOrEmpty(firstname) || Helper.isNullOrEmpty(surname)){
             return null;
