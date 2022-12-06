@@ -4,12 +4,11 @@ import fr.efrei.util.Helper;
 //Done
 
 public class GenderFactory {
-    public static Gender createGender (String genderID, String genderDescription){
-        if (Helper.isNullOrEmpty(genderID) || Helper.isNullOrEmpty(genderDescription)){
+    public static Gender createGender (String genderDescription){
+        if (Helper.isNullOrEmpty(genderDescription)){
             return null;
         }
-        Gender gender = new Gender.Builder().setGenderID(genderID)
-                .setgenderDescription(genderDescription)
+        Gender gender = new Gender.Builder().setgenderDescription(genderDescription)
                 .build();
         return gender;
     }
