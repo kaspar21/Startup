@@ -66,4 +66,3 @@ public class JobRepository implements IJobRepository {
     public List<Job> getAll() {
         return jobDB;
     }}
-
