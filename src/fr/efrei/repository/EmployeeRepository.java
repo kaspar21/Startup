@@ -31,7 +31,7 @@ public class EmployeeRepository implements IEmployeeRepository {
     }
 
 
-    @Override
+
     public Employee read(String s) {
         for (Employee e : employeeDB){
             if (e.getEmployeeID().equals(s)){
@@ -52,13 +52,13 @@ public class EmployeeRepository implements IEmployeeRepository {
         return null;
     }
 
-    @Override
+
     public boolean delete(String s) {
-        Employee raceToDelete = read(s);
-        if (raceToDelete == null) {
+        Employee employeeToDelete = read(s);
+        if (employeeToDelete == null) {
             return false;
         }
-        employeeDB.remove(raceToDelete);
+        employeeDB.remove(employeeToDelete);
         return true;
     }
 
