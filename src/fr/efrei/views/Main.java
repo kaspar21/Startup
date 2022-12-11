@@ -1,8 +1,7 @@
 package fr.efrei.views;
 import fr.efrei.factory.*;
 import fr.efrei.domain.*;
-import fr.efrei.repository.*;
-import fr.efrei.util.Helper;
+
 import java.util.Scanner;
 
 public class Main {
@@ -18,16 +17,16 @@ public class Main {
             System.out.println("3. Delete an employee");
             System.out.println("4. Look for an employee");
             System.out.println("5. Exit the program");
+            System.out.print("Select : ");
             Scanner in = new Scanner(System.in);
             int number=in.nextInt();
             switch(number) {
                 case 0:
-                    System.out.println("Enter your firstname : ");
+                    System.out.print("Enter your firstname : ");
                     String firstname = in.nextLine();
-                    System.out.println("Enter your middle name :");
-                    String middleName = in.nextLine();
-                    System.out.println("Enter your surname : ");
+                    System.out.print("Enter your surname : ");
                     String surname = in.nextLine();
+                    /*
                     System.out.println("Enter your gender description : ");
                     String genderDescription = in.nextLine();
                     System.out.println("Enter your race description:");
@@ -38,23 +37,36 @@ public class Main {
                     String email = in.nextLine();
                     System.out.println("Enter your home number:");
                     int homeNumber = in.nextInt();
+                     */
+                    /*
                     System.out.println("Enter your street adress : ");
                     String streetAddress = in.nextLine();
                     System.out.println("Enter your postal adress : ");
-                    String  postalAdress = in.nextLine();
+                    String postalAddress = in.nextLine();
                     System.out.println("Enter your city : ");
                     String city = in.nextLine();
                     System.out.println("Enter your country : ");
                     String country = in.nextLine();
                     System.out.println("Enter your street number : ");
-                    int streetNumber = in.nextInt();
+                    String streetNumber = in.nextLine();
                     System.out.println("Enter your postal code : ");
-                    double postalCode = Double.parseDouble(in.nextLine());
+                    double postalCode = in.nextDouble();
+                    */
+
+                    /*
                     System.out.println("Enter your type of ID : ");
                     String typeID = in.nextLine();
                     System.out.println("Enter your ID number : ");
-                    String valueID = in.nextLine();
-                    System.out.println("Enter your position : ");
+                    int valueID = in.nextInt();
+                     */
+                    Name name = new NameFactory().createEmployeeName(firstname,surname);
+                    System.out.println(name);
+
+                    //Address adresss = new AddressFactory().createAddress(city, postalAddress, streetAddress, country, streetNumber, postalCode);
+                    //System.out.println(adresss);
+
+                    //positionCode : String
+                    //positionCode
 
 
 
