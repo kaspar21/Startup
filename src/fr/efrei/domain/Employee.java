@@ -2,7 +2,7 @@ package fr.efrei.domain;
 //Done
 
 public class Employee {
-    private int employeeID;
+    public int employeeID;
     private Gender employeeGender;
     private Race employeeRace;
     private double salary;
@@ -18,6 +18,9 @@ public class Employee {
         this.salary = salary;
         this.employeeAdress = employeeAdress;
         this.employeeContact = employeeContact;
+    }
+
+    public Employee() {
     }
 
     public int getEmployeeID() {

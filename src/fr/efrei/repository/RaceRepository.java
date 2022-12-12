@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RaceRepository implements IRaceRepository {
-    private static RaceRepository repository = null;
-    private List<Race> raceDB = null;
+    public static RaceRepository repository = null;
+    public List<Race> raceDB = null;
 
-    private RaceRepository() {
+    public RaceRepository() {
         raceDB = new ArrayList<Race>();
     }
 

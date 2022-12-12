@@ -2,13 +2,14 @@ package fr.efrei.domain;
 //Done
 
 public class Race extends Employee{
-    private String description;
+
+    public String description;
 
     //default constructor
-    private Race() {}
+    public Race(int employeeID, String raceDescription) {}
 
     //add another constructor later
-    private Race(Builder builder){
+    public Race(Builder builder){
         this.description = builder.description;
     }
 
@@ -27,7 +28,7 @@ public class Race extends Employee{
 
     //builder class = static inner class, copy the same attributes at the top
     public static class Builder {
-        private String description;
+        public String description;
 
         //setters, not getters
         public Builder setDescription(String description) {

@@ -5,7 +5,7 @@ public class Gender extends Employee{
     private String genderDescription;
 
     //default constructor
-    private Gender() {}
+    public Gender(int employeeID, String genderDescription) {}
 
     //add another constructor later
     private Gender(Builder builder){

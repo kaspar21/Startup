@@ -10,7 +10,7 @@ public class Address extends Employee{
     private double postalCode;
 
     //default constructor
-    private Address() {}
+    public Address(int employeeID, String streetAddress, String postalAddress, String city, String country, String streetNumber, double postalCode) {}
 
     //add another constructor later
     private Address(Builder builder){

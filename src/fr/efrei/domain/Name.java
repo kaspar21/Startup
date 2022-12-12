@@ -5,7 +5,7 @@ public class Name extends Employee{
     private String firstname;
     private String surname;
 
-    private Name() {}
+    public Name(String firstname, String surname) {}
 
     //add another constructor later
     private Name(Name.Builder builder){
