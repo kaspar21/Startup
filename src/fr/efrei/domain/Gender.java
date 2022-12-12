@@ -1,11 +1,11 @@
 package fr.efrei.domain;
 //Done
 
-public class Gender extends Employee{
+public class Gender {
     private String genderDescription;
 
     //default constructor
-    public Gender(int employeeID, String genderDescription) {}
+    private Gender(int employeeID, String genderDescription) {}
 
     //add another constructor later
     private Gender(Builder builder){
@@ -22,7 +22,7 @@ public class Gender extends Employee{
     @Override
     public String toString() {
         return "Gender{" +
-                ", genderDescription='" + genderDescription + '\'' +
+                " genderDescription='" + genderDescription + '\'' +
                 '}';
     }
 

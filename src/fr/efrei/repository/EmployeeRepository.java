@@ -32,9 +32,9 @@ public class EmployeeRepository implements IEmployeeRepository {
 
 
     @Override
-    public Employee read(Integer i) {
+    public Employee read(String s) {
         for (Employee e : employeeDB){
-            if (e.getEmployeeID() == i){
+            if (e.getEmployeeID().equals(s)){
                 return e;
             }
         }
@@ -53,8 +53,8 @@ public class EmployeeRepository implements IEmployeeRepository {
     }
 
     @Override
-    public boolean delete(Integer i) {
-        Employee raceToDelete = read(i);
+    public boolean delete(String s) {
+        Employee raceToDelete = read(s);
         if (raceToDelete == null) {
             return false;
         }

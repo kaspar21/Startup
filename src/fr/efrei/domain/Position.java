@@ -3,10 +3,9 @@ package fr.efrei.domain;
 public class Position {
     private String PositionCode;
 
-    public Position(Builder builder){}
 
-    public Position(String PositionCode){
-        this.PositionCode = PositionCode;
+    private Position(Builder builder){
+        this.PositionCode = builder.PositionCode;
     }
 
     public String getPositionCode() {

@@ -1,11 +1,11 @@
 package fr.efrei.domain;
 //Done
 
-public class Name extends Employee{
+public class Name {
     private String firstname;
     private String surname;
 
-    public Name(String firstname, String surname) {}
+    private Name(String firstname, String surname) {}
 
     //add another constructor later
     private Name(Name.Builder builder){

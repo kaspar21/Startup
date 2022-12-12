@@ -1,12 +1,12 @@
 package fr.efrei.domain;
 //Done
-public class Contact extends Employee{
+public class Contact{
     private int cellPhoneNumber;
     private String email;
     private int homeNumber;
 
     //default constructor
-    private Contact() {}
+    private Contact(int cellPhoneNumber, String email, int homeNumber) {}
 
     //add another constructor later
     private Contact(Builder builder){

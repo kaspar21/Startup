@@ -1,13 +1,13 @@
 package fr.efrei.domain;
 //Done
 
-public class ID extends Employee{
+public class ID {
     private String typeID;
     private String valueID;
 
-    public ID() {}
+    private ID() {}
 
-    public ID(Builder builder) {
+    private ID(Builder builder) {
         this.typeID = builder.typeID;
         this.valueID = builder.valueID;
     }

@@ -1,7 +1,7 @@
 package fr.efrei.domain;
 //Done
 
-public class Address extends Employee{
+public class Address {
     private String streetAddress;
     private String postalAddress;
     private String city;
@@ -10,7 +10,8 @@ public class Address extends Employee{
     private double postalCode;
 
     //default constructor
-    public Address(int employeeID, String streetAddress, String postalAddress, String city, String country, String streetNumber, double postalCode) {}
+    private Address(){}
+    private Address(int employeeID, String streetAddress, String postalAddress, String city, String country, String streetNumber, double postalCode) {}
 
     //add another constructor later
     private Address(Builder builder){

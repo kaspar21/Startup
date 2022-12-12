@@ -2,28 +2,27 @@ package fr.efrei.domain;
 //Done
 
 public class Employee {
-    public int employeeID;
+    public String employeeID;
     private Gender employeeGender;
     private Race employeeRace;
-    private double salary;
     private Address employeeAdress;
     private Contact employeeContact;
+    private Name employeeName;
 
-    public Employee(Builder builder) {}
+    private Employee(Builder builder) {}
 
-    public Employee(int employeeID, Gender employeeGender, Race employeeRace, double salary, Address employeeAdress, Contact employeeContact) {
+    private Employee(String employeeID, Gender employeeGender, Race employeeRace, Address employeeAdress, Contact employeeContact,Name employeeName) {
         this.employeeID = employeeID;
         this.employeeGender = employeeGender;
         this.employeeRace = employeeRace;
-        this.salary = salary;
         this.employeeAdress = employeeAdress;
         this.employeeContact = employeeContact;
+        this.employeeName=employeeName;
     }
 
-    public Employee() {
-    }
+    private Employee() {}
 
-    public int getEmployeeID() {
+    public String getEmployeeID() {
         return employeeID;
     }
 
@@ -35,9 +34,7 @@ public class Employee {
         return employeeRace;
     }
 
-    public double getSalary() {
-        return salary;
-    }
+    public Name getEmployeeName() {        return employeeName;    }
 
     public Address getEmployeeAdress() {
         return employeeAdress;
@@ -53,23 +50,23 @@ public class Employee {
                 "employeeID=" + employeeID +
                 ", employeeGender=" + employeeGender +
                 ", employeeRace=" + employeeRace +
-                ", salary=" + salary +
                 ", employeeAdress=" + employeeAdress +
                 ", employeeContact=" + employeeContact +
+                ", employeeName="+employeeName+
                 '}';
     }
 
 
     //builder class = static inner class, copy the same attributes at the top
     public static class Builder {
-        public int employeeID;
+        public String employeeID;
         public Gender employeeGender;
         public Race employeeRace;
-        public double salary;
         public Address employeeAdress;
         public Contact employeeContact;
+        public Name employeeName;
 
-        public Builder setEmployeeID(int employeeID) {
+        public Builder setEmployeeID(String employeeID) {
             this.employeeID = employeeID;
             return this; //return the Builder object
         }
@@ -84,8 +81,8 @@ public class Employee {
             return this; //return the Builder object
         }
 
-        public Builder setSalary(double salary) {
-            this.salary = salary;
+        public Builder setEmployeeName(Name employeeName) {
+            this.employeeName=employeeName;
             return this; //return the Builder object
         }
 
@@ -103,9 +100,9 @@ public class Employee {
             this.employeeID = employee.employeeID;
             this.employeeGender = employee.employeeGender;
             this.employeeRace = employee.employeeRace;
-            this.salary = employee.salary;
             this.employeeAdress = employee.employeeAdress;
             this.employeeContact = employee.employeeContact;
+            this.employeeName=employee.employeeName;
             return this; //return the Builder object
         }
 

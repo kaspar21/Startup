@@ -1,15 +1,15 @@
 package fr.efrei.domain;
 //Done
 
-public class Race extends Employee{
+public class Race {
 
     public String description;
 
     //default constructor
-    public Race(int employeeID, String raceDescription) {}
+    private Race(int employeeID, String raceDescription) {}
 
     //add another constructor later
-    public Race(Builder builder){
+    private Race(Builder builder){
         this.description = builder.description;
     }
 
@@ -22,7 +22,7 @@ public class Race extends Employee{
     @Override
     public String toString() {
         return "Race{" +
-                ", description='" + description + '\'' +
+                " description='" + description + '\'' +
                 '}';
     }
 
