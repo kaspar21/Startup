@@ -1,7 +1,7 @@
 package fr.efrei.domain;
 //Done
 
-public class Race {
+public class Race extends Employee{
     private String description;
 
     //default constructor
