@@ -1,6 +1,5 @@
 package fr.efrei.factory;
 //Done
-
 import fr.efrei.domain.Address;
 import fr.efrei.util.Helper;
 
@@ -55,5 +54,4 @@ public class AddressFactory {
                         .build();
         return address;
     }
-    
 }

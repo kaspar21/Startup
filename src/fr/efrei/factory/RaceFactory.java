@@ -7,7 +7,7 @@ public class RaceFactory {
         if (Helper.isNullOrEmpty(description)){
             return null;
         }
-        Race race = new Race.Builder().setDescription(description) //referring to the BUILDER class inside the Race class
+        Race race = new Race.Builder().setDescription(description)
                 .build();
         return race;
     }

@@ -1,7 +1,7 @@
 package fr.efrei.domain;
 //Done
 
-public class ID {
+public class ID extends Employee{
     private String typeID;
     private String valueID;
 

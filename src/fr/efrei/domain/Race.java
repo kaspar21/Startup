@@ -1,8 +1,7 @@
 package fr.efrei.domain;
 //Done
 
-public class Race {
-
+public class Race extends Employee{
     private String description;
 
     //default constructor
@@ -14,7 +13,6 @@ public class Race {
     }
 
     //getters but no setters, to have protected classes
-
 
     public String getDescription() {
         return description;
@@ -29,19 +27,15 @@ public class Race {
 
     //builder class = static inner class, copy the same attributes at the top
     public static class Builder {
-
         private String description;
 
         //setters, not getters
-
-
         public Builder setDescription(String description) {
             this.description = description;
             return this; //return the Builder object
         }
 
         public Builder copy(Race race){
-
             this.description = race.description;
             return this; //return the Builder object
         }

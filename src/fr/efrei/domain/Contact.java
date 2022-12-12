@@ -1,6 +1,6 @@
 package fr.efrei.domain;
 //Done
-public class Contact {
+public class Contact extends Employee{
     private int cellPhoneNumber;
     private String email;
     private int homeNumber;

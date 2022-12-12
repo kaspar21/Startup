@@ -1,7 +1,7 @@
 package fr.efrei.domain;
 //Done
 
-public class Name {
+public class Name extends Employee{
     private String firstname;
     private String surname;
 
